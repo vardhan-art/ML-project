@@ -1,3 +1,7 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 import streamlit as st
 import pandas as pd
 import numpy as np
