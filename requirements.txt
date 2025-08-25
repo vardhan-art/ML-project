@@ -7,3 +7,5 @@ matplotlib
 seaborn
 notebook
 flask   # if deploying as an API
+streamlit
+plotly

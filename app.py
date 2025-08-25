@@ -170,7 +170,7 @@ st.markdown("""
 @st.cache_resource
 def load_data():
     try:
-        data_path = "C:/Users/kalur/OneDrive/Documents/Desktop/SmartHomeEnergyManagement/Rawdata/smart_home_energy_v3.csv"
+        data_path = "C:/Users/kalur/OneDrive/Documents/Desktop/SmartHomeEnergyManagement/rawdata/smart_home_energy_v3.csv"
         df = pd.read_csv(data_path)
 
         # Rename columns to a consistent, lowercase format
