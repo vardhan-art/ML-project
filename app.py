@@ -174,7 +174,7 @@ st.markdown("""
 @st.cache_resource
 def load_data():
     try:
-        data_path = "rawdata/smart_home_energy_v3.csv"
+        data_path = "Rawdata/smart_home_energy_v3.csv"
         df = pd.read_csv(data_path)
 
         # Rename columns to a consistent, lowercase format
@@ -205,35 +205,42 @@ def load_data():
 @st.cache_resource
 def load_model_and_preprocessor():
     try:
-        preprocessor_path = "C:/Users/kalur/OneDrive/Documents/Desktop/SmartHomeEnergyManagement/artifacts/preprocessor.pkl"
-        model_path = "C:/Users/kalur/OneDrive/Documents/Desktop/SmartHomeEnergyManagement/artifacts/model.pkl" # Corrected path
-        
+        preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
+        model_path = os.path.join("artifacts", "model.pkl")
         preprocessor = joblib.load(preprocessor_path)
         model = joblib.load(model_path)
         return model, preprocessor
     except Exception as e:
         st.warning(f"Error loading model files: {e}. Prediction functionality will be disabled.")
         return None, None
-    
+
+
 def create_sample_data():
-    dates = pd.date_range(start='2023-01-01', end='2023-12-31', freq='H')
+    dates = pd.date_range(start='2023-01-01', end='2023-12-31', freq='h')  # ✅ fixed to 'h'
     np.random.seed(42)
-    
+
     data = pd.DataFrame({
         'timestamp': dates,
-        'energy_consumption': np.random.normal(3.5, 1.2, len(dates)) + 
+        'energy_consumption': np.random.normal(3.5, 1.2, len(dates)) +
                               np.sin(np.arange(len(dates)) * 0.05) * 1.5 +
                               (np.arange(len(dates)) % 24 / 24) * 2,
-        'temperature': np.random.normal(72, 12, len(dates)) + 
-                        np.sin(np.arange(len(dates)) * 0.005) * 20,
+        'temperature': np.random.normal(72, 12, len(dates)) +
+                       np.sin(np.arange(len(dates)) * 0.005) * 20,
         'humidity': np.random.normal(50, 15, len(dates)),
         'occupancy': np.random.poisson(0.8, len(dates)),
         'appliance_usage': np.random.gamma(2, 0.5, len(dates)),
-        'solar_generation': np.maximum(0, np.random.normal(2.5, 1.5, len(dates)) * np.sin((np.arange(len(dates)) % 24 - 6) * np.pi/12)),
-        'energy_cost': np.random.normal(0.15, 0.03, len(dates)) * (1 + 0.5 * ((np.arange(len(dates)) % 24 >= 16) & (np.arange(len(dates)) % 24 <= 21)))
+        'solar_generation': np.maximum(
+            0,
+            np.random.normal(2.5, 1.5, len(dates)) *
+            np.sin((np.arange(len(dates)) % 24 - 6) * np.pi / 12)
+        ),
+        'energy_cost': np.random.normal(0.15, 0.03, len(dates)) *
+                       (1 + 0.5 * ((np.arange(len(dates)) % 24 >= 16) &
+                                   (np.arange(len(dates)) % 24 <= 21)))
     })
-    
+
     return data
+
 
 def get_device_data():
     devices = {
