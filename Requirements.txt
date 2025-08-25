@@ -1,3 +1,9 @@
-pandas
 numpy
+pandas
+scikit-learn
+xgboost
+catboost
+matplotlib
 seaborn
+notebook
+flask   # if deploying as an API

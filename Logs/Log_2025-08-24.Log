@@ -1,0 +1,50 @@
+2025-08-24 01:29:29,162-INFO-Entered the data ingestion method or component
+2025-08-24 01:30:03,821-INFO-Entered the data ingestion method or component
+2025-08-24 01:33:25,739-INFO-Entered the data ingestion method or component
+2025-08-24 01:33:25,763-INFO-Read the dataset as dataframe
+2025-08-24 01:33:25,782-INFO-Train test split initiated
+2025-08-24 01:33:25,811-INFO-Ingestion of the data is completed
+2025-08-24 19:21:03,773-INFO-Entered the data ingestion method or component
+2025-08-24 19:21:03,802-INFO-Read the dataset as dataframe
+2025-08-24 19:21:03,816-INFO-Train test split initiated
+2025-08-24 19:21:03,845-INFO-Ingestion of the data is completed
+2025-08-24 19:34:05,006-INFO-Entered the data ingestion method or component
+2025-08-24 19:34:05,011-INFO-Read the dataset as dataframe
+2025-08-24 19:34:05,019-INFO-Train test split initiated
+2025-08-24 19:34:05,029-INFO-Ingestion of the data is completed
+2025-08-24 19:44:10,469-INFO-Entered the data ingestion method or component
+2025-08-24 19:44:10,511-INFO-Read the dataset as dataframe
+2025-08-24 19:44:10,532-INFO-Train test split initiated
+2025-08-24 19:44:10,571-INFO-Ingestion of the data is completed
+2025-08-24 19:44:58,306-INFO-Entered the data ingestion method or component
+2025-08-24 19:44:58,313-INFO-Read the dataset as dataframe
+2025-08-24 19:44:58,321-INFO-Train test split initiated
+2025-08-24 19:44:58,334-INFO-Ingestion of the data is completed
+2025-08-24 19:47:54,891-INFO-Entered the data ingestion method or component
+2025-08-24 19:47:54,898-INFO-Read the dataset as dataframe
+2025-08-24 19:47:54,906-INFO-Train test split initiated
+2025-08-24 19:47:54,915-INFO-Ingestion of the data is completed
+2025-08-24 19:50:19,587-INFO-Entered the data ingestion method or component
+2025-08-24 19:50:19,593-INFO-Read the dataset as dataframe
+2025-08-24 19:50:19,602-INFO-Train test split initiated
+2025-08-24 19:50:19,610-INFO-Ingestion of the data is completed
+2025-08-24 19:56:17,614-INFO-Entered the data ingestion method or component
+2025-08-24 19:56:17,624-INFO-Read the dataset as dataframe
+2025-08-24 19:56:17,639-INFO-Train test split initiated
+2025-08-24 19:56:17,653-INFO-Ingestion of the data is completed
+2025-08-24 19:59:13,352-INFO-Entered the data ingestion method or component
+2025-08-24 19:59:13,361-INFO-Read the dataset as dataframe
+2025-08-24 19:59:13,377-INFO-Train test split initiated
+2025-08-24 19:59:13,391-INFO-Ingestion of the data is completed
+2025-08-24 20:03:37,740-INFO-Entered the data ingestion method or component
+2025-08-24 20:03:37,756-INFO-Read the dataset as dataframe
+2025-08-24 20:03:37,776-INFO-Train test split initiated
+2025-08-24 20:03:37,797-INFO-Ingestion of the data is completed
+2025-08-24 20:21:42,112-INFO-Entered the data ingestion method or component
+2025-08-24 20:21:42,118-INFO-Read the dataset as dataframe
+2025-08-24 20:21:42,130-INFO-Train test split initiated
+2025-08-24 20:21:42,142-INFO-Ingestion of the data is completed
+2025-08-24 20:21:42,189-INFO-Train and test data read successfully
+2025-08-24 20:21:42,237-INFO-Applying preprocessing object
+2025-08-24 20:21:42,273-INFO-Splitting training and test input data
+2025-08-24 20:24:13,326-INFO-Best model found: CatBoosting Regressor with R2 Score: 0.7287619588470342
